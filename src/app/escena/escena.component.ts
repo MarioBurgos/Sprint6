@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-escena',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./escena.component.scss']
 })
 export class EscenaComponent implements OnInit {
+
+  @Input() public json: any;
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EscenaComponent } from '../escena/escena.component';
+import jsonData from '../../assets/json/data.json';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,8 @@ import { EscenaComponent } from '../escena/escena.component';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  data: JSON = jsonData;
 
   constructor() { }
 
