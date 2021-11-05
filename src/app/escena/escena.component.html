@@ -1,9 +1,9 @@
-<div class="custom-div">
-    <button class="custom-btn">Anterior</button>
-    <button class="custom-btn">Següent</button>
+<div class="escena-div">
+    <button class="escena-btn" (click)="onClickPrev()">Anterior</button>
+    <button class="escena-btn" (click)="onClickNext()">Següent</button>
 </div>
-<div class="custom-div">
-    <p class="custom-sentence" *ngFor="let sentence of json" [ngClass]="{ 'is-active': sentence.currentSentence }">
+<div class="escena-div">
+    <p class="escena-sentence" *ngFor="let sentence of json; let i = index" [ngClass]="{'is-active': currentSentence == i }">
         {{sentence}}
     </p>
 </div>
