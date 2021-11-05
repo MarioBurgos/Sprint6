@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import jsonData from '../../assets/json/data.json';
+// import { JSON_DATA } from '../../assets/data/data';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,17 @@ import jsonData from '../../assets/json/data.json';
 })
 export class HomeComponent {
 
-  data: any = jsonData;
+  public starter: boolean
 
-  constructor() { }
+  data: any = jsonData;
+  // data: any = JSON_DATA;
+
+  constructor() {
+    this.starter = false;
+  }
+
+  public start():void{
+    this.starter = true;
+  }
 
 }

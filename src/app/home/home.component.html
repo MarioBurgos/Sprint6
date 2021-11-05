@@ -1,3 +1,7 @@
-<div class="home-div">
-    <app-escena [json]="data"></app-escena>
+<div class="home-div" *ngIf="!starter">
+    <h1>Benvingut!</h1>
+    <button class="home-btn" (click)="start()">Començar</button>
 </div>
+<ng-container *ngIf="starter">
+    <app-escena [json]="data"></app-escena>
+</ng-container>
