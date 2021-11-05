@@ -1,5 +1,9 @@
-<ul>
-    <p *ngFor="let frase of json">
-        {{frase}}
+<div class="custom-div">
+    <button class="custom-btn">Anterior</button>
+    <button class="custom-btn">Següent</button>
+</div>
+<div class="custom-div">
+    <p class="custom-sentence" *ngFor="let sentence of json" [ngClass]="{ 'is-active': sentence.currentSentence }">
+        {{sentence}}
     </p>
-</ul>
+</div>
