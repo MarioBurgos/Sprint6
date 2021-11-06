@@ -1,9 +1,7 @@
-<div class="escena-div">
+<div class="escena-div " [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}">
     <button class="escena-btn" (click)="onClickPrev()">Anterior</button>
     <button class="escena-btn" (click)="onClickNext()">Següent</button>
-</div>
-<div class="escena-div">
     <p class="escena-sentence" *ngFor="let sentence of json; let i = index" [ngClass]="{'is-active': currentSentence == i }">
-        {{sentence}}
+        {{sentence.txt}}
     </p>
 </div>

@@ -1,6 +1,4 @@
-export const JSON_DATA = [
-
-    {
+export const JSON_DATA = [{
         txt: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
         img: "../img/1.jpg"
     },
